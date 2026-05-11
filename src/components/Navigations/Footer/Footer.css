@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+/* --- Reset & Base --- */
+.footer-container {
+  font-family: 'Roboto', sans-serif;
+  padding: 40px 10% 10px;
+  background-color: #ffffff;
+  color: #333333;
+  line-height: 1.5;
+}
+
+/* --- Top Section Layout --- */
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  margin-bottom: 80px;
+  /* Entrance animation */
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* --- Left Side: CTA Section --- */
+.footer-cta {
+  flex: 1;
+}
+
+.footer-cta h1 {
+  font-size: 48px;
+  font-weight: 900;
+  margin-bottom: 24px;
+  letter-spacing: -1px;
+}
+
+.footer-cta p {
+  color: #666666;
+  font-size: 18px;
+  max-width: 420px;
+  margin-bottom: 40px;
+}
+
+.contact-btn {
+  background-color: #00BFFF;
+  color: #ffffff;
+  border: none;
+  padding: 16px 32px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: transform 0.2s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: #0096cc;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 191, 255, 0.3);
+}
+
+/* --- Right Side: Links & Contact --- */
+.footer-links {
+  flex: 1;
+}
+
+.footer-links h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* Social Grid & Cards */
+.social-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 48px;
+}
+
+.social-card {
+  text-decoration: none;
+  color: #333333;
+  background-color: #f8f9fa;
+  padding: 16px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 500;
+  border: 1px solid transparent;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-card i {
+  font-size: 18px;
+}
+
+.social-card:hover {
+  background-color: #ffffff;
+  transform: translateY(-5px);
+  border-color: #00BFFF;
+  color: #00BFFF;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+/* Contact Info Card (Dark Box) */
+.contact-info-card {
+  background-color: #111111;
+  color: #ffffff;
+  padding: 32px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.info-item i {
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.info-item small {
+  display: block;
+  color: #aaaaaa;
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+.info-item p {
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.info-divider {
+  width: 1px;
+  height: 40px;
+  background-color: #333333;
+}
+
+/* --- Bottom Section --- */
+.footer-bottom {
+  border-top: 1px solid #eeeeee;
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-spin {
+  background-color: #111111;
+  color: #ffffff;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 18px;
+  cursor: pointer;
+  transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.logo-spin:hover {
+  transform: rotate(360deg);
+}
+
+/* Navigation Links */
+.footer-bottom nav {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-link {
+  position: relative;
+  text-decoration: none;
+  color: #555555;
+  font-weight: 500;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #00BFFF;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #00BFFF;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.copyright {
+  color: #999999;
+  font-size: 14px;
+}
+
+/* --- Animation Keyframes --- */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 900px) {
+  .footer-top {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .social-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 24px;
+    text-align: center;
+  }
+}
