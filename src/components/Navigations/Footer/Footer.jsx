@@ -4,6 +4,7 @@ import './Footer.css';
 const Footer = () => {
   const socials = [
     { name: 'Email', icon: 'fa-solid fa-at', url: 'https://dribbble.com' },
+    { name: 'Github', icon: 'fa-brands fa-github', url: 'https://github.com/jxtsammy' },
     { name: 'Linkedin', icon: 'fa-brands fa-linkedin-in', url: 'www.linkedin.com/in/sammy-sallo' },
     { name: 'Instagram', icon: 'fa-brands fa-instagram', url: 'https://www.instagram.com/thegr8kidofficial/' },
     { name: 'Twitter', icon: 'fa-brands fa-twitter', url: 'https://x.com/thegr8kid_' },

@@ -6,6 +6,9 @@ import Hero from './components/Home/HeroSection/Hero'
 import Footer from './components/Navigations/Footer/Footer';
 import Testimonials from './components/Home/Testimonials/Testimonials';
 import History from './components/Home/History/History'
+import Quote from './components/Home/Quote/Quote'
+import ServiceHero from './components/Service/ServiceHero/ServiceHero'
+import ServicesProvided from './components/Service/ServicesProvided/ServicesProvided'
 
 function App() {
   return (
@@ -22,23 +25,21 @@ function App() {
                 <Hero />
                 <Testimonials />
                 <History />
+                <Quote />
             </main>
           }
         />
 
         {/* OTHER PAGES: Standalone views*/}
-        {/*
         <Route
-          path="/about"
+          path="/service"
           element={
             <main>
-              <AboutUs />
-              <Team />
-              <Events />
+              <ServiceHero />
+              <ServicesProvided />
             </main>
           }
         />
-        */}
 
       </Routes>
 

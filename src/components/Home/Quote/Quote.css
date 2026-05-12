@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+.quote-container {
+  font-family: 'Roboto', sans-serif;
+  padding: 100px 24px;
+  text-align: center;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.quote-icon {
+  background-color: #00BFFF;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 22px;
+  margin-bottom: 40px;
+}
+
+.main-quote {
+  font-size: 28px;
+  font-weight: 500;
+  color: #111;
+  min-height: 80px; /* Prevents layout jump on different quote lengths */
+  line-height: 1.0;
+}
+
+.quote-author {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 48px;
+}
+
+.author-name {
+  font-weight: 900;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #111;
+}
+
+.author-title {
+  font-size: 14px;
+  color: #888;
+}
+
+/* Controls & Dots */
+.quote-controls {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav-arrow-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  background-color: #00BFFF; /* Blue buttons */
+  color: white; /* White icons */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.nav-arrow-btn:hover {
+  background-color: #008ecc;
+  transform: scale(1.1);
+}
+
+.quote-dots {
+  display: flex;
+  gap: 10px;
+}
+
+.quote-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #D1D9E2;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.quote-dot.active {
+  width: 24px;
+  border-radius: 10px;
+  background-color: #00BFFF;
+}
+
+/* Animation */
+.fade-in {
+  animation: fadeIn 0.5s forwards;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .quote-container {
+    padding: 60px 20px;
+  }
+
+  .main-quote {
+    font-size: 18px;
+    min-height: 160px;
+  }
+
+  .quote-author {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .quote-controls {
+    gap: 20px;
+  }
+}

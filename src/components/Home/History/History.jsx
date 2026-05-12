@@ -1,10 +1,36 @@
 import { useEffect, useRef, useState } from 'react';
 import './History.css';
-import Profile from '../../../assets/profileImg.png'
+import Profile from '../../../assets/profileImg.png';
 
 const HistorySection = () => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef(null);
+
+  const education = [
+    {
+      date: "2022 - Present • Kwame Nkrumah University of Science & Technology",
+      title: "Bachelor of Science (B.Sc.) in Computer Science",
+      desc: "Studied Computer Science at KNUST, where I developed a strong passion for technology, innovation, and building impactful digital solutions through problem-solving and practical development experience."
+    },
+  ];
+
+  const workHistory = [
+    {
+      date: "2025 • VRA Academy",
+      title: "Intern",
+      desc: "Supported technology operations and provision of technical support"
+    },
+    {
+      date: "2025 - Present • Enactus KNUST",
+      title: "Technology Division Lead",
+      desc: "Supported technology operations and digital solutions development."
+    },
+    {
+      date: "2026 - Present • NextMakers Foundation",
+      title: "Chief Technology Officer",
+      desc: "Technology innovation, digital strategy, and the development of impactful solutions that empower young changemakers."
+    },
+  ];
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -17,7 +43,6 @@ const HistorySection = () => {
 
   return (
     <section ref={sectionRef} className={`history-container ${isVisible ? 'is-active' : ''}`}>
-      {/* Top Profile Header */}
       <div className="profile-header-card">
         <div className="header-info">
           <div className="avatar-circle">
@@ -29,52 +54,51 @@ const HistorySection = () => {
           </div>
         </div>
         <div className="header-actions">
-          <button className="btn-resume"><i className="fas fa-download"></i> Download Resume</button>
+          <a href="/resume.pdf" download className="resume-link">
+            <button className="btn-resume">
+              <i className="fas fa-download"></i> Download Resume
+            </button>
+          </a>
         </div>
       </div>
 
-      {/* Main History Grid */}
       <div className="history-grid">
         {/* Education Column */}
         <div className="history-col">
           <h3 className="col-label edu-label">EDUCATION</h3>
-          <div className="history-item">
-            <span className="item-date">2021 - Present • UK</span>
-            <h4>Website Design Course</h4>
-            <p>Bachelor's Degree in Computer Science ABC Technical Institute, Jefferson, Missouri.</p>
-          </div>
-          <div className="history-item">
-            <span className="item-date">2016 - 2019 • Cambridge University</span>
-            <h4>Bachelor of Philosophy (B. Phil.)</h4>
-            <p>Coursework - Git, WordPress, Javascript, iOS, Android, app leos and macos.</p>
-          </div>
+          {education.map((item, index) => (
+            <div key={index} className="history-item">
+              <span className="item-date">{item.date}</span>
+              <h4>{item.title}</h4>
+              <p>{item.desc}</p>
+            </div>
+          ))}
         </div>
 
         {/* Work History Column */}
         <div className="history-col">
           <h3 className="col-label work-label">WORK HISTORY</h3>
-          <div className="history-item">
-            <span className="item-date">2019 - Present • Google</span>
-            <h4>Team Lead of UI/UX Designer</h4>
-            <p>Collaborate with creative and development teams on the execution of ideas.</p>
-          </div>
-          <div className="history-item">
-            <span className="item-date">2016 - 2019 • Apple</span>
-            <h4>Senior UI/UX Designer</h4>
-            <p>Monitored technical aspects of the front-end delivery for projects.</p>
-          </div>
+          {workHistory.map((item, index) => (
+            <div key={index} className="history-item">
+              <span className="item-date">{item.date}</span>
+              <h4>{item.title}</h4>
+              <p>{item.desc}</p>
+            </div>
+          ))}
         </div>
 
-        {/* Tools Column */}
+        {/* Bio Column */}
         <div className="history-col">
-          <h3 className="col-label tools-label">Bio</h3>
-          <div className="tools-masonry">
-            <p className='bio'>
-              I’m a Graphic Designer, Web and Mobile Developer,
-              and Project Manager passionate about tech, innovation, and creating
-              impactful digital experiences. I enjoy blending creativity with technology t
-              o build clean designs, functional applications, and solutions that solve real-world
-              problems.
+          <h3 className="col-label bio-label">BIO</h3>
+          <div className="bio-content">
+            <p>
+              I am a passionate Visual Designer and Webflow Developer with over 5 years of experience
+              creating digital experiences that are as functional as they are beautiful.
+            </p>
+            <p>
+              My approach blends technical precision with creative storytelling. Whether I'm
+              prototyping in Figma or building complex logic in Webflow, my goal is always to
+              empower brands and delight users.
             </p>
           </div>
         </div>
