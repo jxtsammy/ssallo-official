@@ -3,11 +3,9 @@ import './Footer.css';
 
 const Footer = () => {
   const socials = [
-    { name: 'Email', icon: 'fa-solid fa-at', url: 'https://dribbble.com' },
     { name: 'Github', icon: 'fa-brands fa-github', url: 'https://github.com/jxtsammy' },
     { name: 'Linkedin', icon: 'fa-brands fa-linkedin-in', url: 'www.linkedin.com/in/sammy-sallo' },
-    { name: 'Instagram', icon: 'fa-brands fa-instagram', url: 'https://www.instagram.com/thegr8kidofficial/' },
-    { name: 'Twitter', icon: 'fa-brands fa-twitter', url: 'https://x.com/thegr8kid_' },
+    { name: 'Whatsapp', icon: 'fa-brands fa-whatsapp', url: 'https://wa.link/2e9n0k' },
   ];
 
   return (
@@ -16,9 +14,11 @@ const Footer = () => {
         <div className="footer-cta">
           <h1 className="fade-in">Enough Talk! Let’s Work Together.</h1>
           <p>Do you fancy saying hi to me or do you want to get started with your project and you need my help? Feel free to contact me.</p>
-          <button className="contact-btn pulse-hover">
-            Contact With Me <i className="fas fa-arrow-right"></i>
-          </button>
+          <Link to="/contact" className="b-nav-link">
+            <button className="contact-btn pulse-hover">
+              Contact With Me <i className="fas fa-arrow-right"></i>
+            </button>
+          </Link>
         </div>
 
         <div className="footer-links">
@@ -63,8 +63,9 @@ const Footer = () => {
         <div className="logo-spin">S</div>
         <nav>
           <Link to="/" className="nav-link">Home</Link>
-          <Link to="/works" className="nav-link">Works</Link>
           <Link to="/about" className="nav-link">About</Link>
+          <Link to="/leadership" className="nav-link">Leadership</Link>
+          <Link to="/service" className="nav-link">Service</Link>
           <Link to="/contact" className="nav-link">Contact</Link>
         </nav>
         <p className="copyright">© 2026 Samuel Sallo.</p>

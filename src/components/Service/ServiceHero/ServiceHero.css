@@ -16,8 +16,8 @@
   max-width: 600px;
 }
 
-.hero-title {
-  font-size: 42px;
+.s-hero-title {
+  font-size: 48px;
   font-weight: 900;
   color: #1d2130;
   line-height: 1.2;
@@ -47,6 +47,10 @@
   font-weight: 700;
   cursor: pointer;
   transition: background-color 0.3s ease;
+}
+
+.link-btn{
+  text-decoration: none;
 }
 
 .learn-more-btn:hover {

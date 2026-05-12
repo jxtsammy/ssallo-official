@@ -1,11 +1,12 @@
 import './ServiceHero.css';
 import MyImage from '../../../assets/camp.jpeg'
+import { Link } from 'react-router-dom';
 
 const ServiceHero = () => {
   return (
     <section className="service-hero-container">
       <div className="service-hero-content">
-        <h1 className="hero-title">
+        <h1 className="s-hero-title">
           Designing & crafting seamless digital experiences that just feel right
         </h1>
 
@@ -20,7 +21,7 @@ const ServiceHero = () => {
           I engineer experiences.
         </p>
 
-        <button className="learn-more-btn">Learn more</button>
+        <Link to='/contact' className='link-btn'><button className="learn-more-btn">Learn more</button></Link>
       </div>
 
       <div className="service-hero-visual">

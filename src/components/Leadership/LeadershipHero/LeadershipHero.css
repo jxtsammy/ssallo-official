@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+.leadership-hero {
+  background-color: #1777E5;
+  padding: 50px 10%;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+  color: #ffffff;
+  border-bottom-right-radius: 80px;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  /* Expands the container to use available horizontal space */
+  width: 100%;
+  max-width: 1600px;
+  text-align: left;
+  margin-top: 100px;
+}
+
+.hero-title {
+  font-size: 72px;
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -3px;
+  margin: 0;
+}
+
+/* Base state for animation */
+.hero-title span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Styled for a cinematic, editorial look */
+.accent-text {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* --- Animation Triggers --- */
+.animate-in .hero-title span:nth-child(1) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.1s;
+}
+
+.animate-in .hero-title span:nth-child(3) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.3s;
+}
+
+/* Background visual spice */
+.hero-bg-accent {
+  position: absolute;
+  top: -10%;
+  right: -5%;
+  width: 45%;
+  height: 120%;
+  background: rgba(255, 255, 255, 0.05);
+  transform: skewX(-15deg);
+  z-index: 1;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 1024px) {
+  .hero-title { font-size: 56px; letter-spacing: -2px; }
+}
+
+@media (max-width: 768px) {
+  .leadership-hero { padding: 40px 24px; border-radius: 0px; }
+  .hero-title {
+    font-size: 42px;
+    letter-spacing: -1px;
+    line-height: 1.2;
+  }
+}

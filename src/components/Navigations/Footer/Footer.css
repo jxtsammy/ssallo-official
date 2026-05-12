@@ -9,6 +9,10 @@
   line-height: 1.5;
 }
 
+.b-nav-link{
+  text-decoration: none;
+}
+
 /* --- Top Section Layout --- */
 .footer-top {
   display: flex;

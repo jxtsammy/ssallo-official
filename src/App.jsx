@@ -9,6 +9,11 @@ import History from './components/Home/History/History'
 import Quote from './components/Home/Quote/Quote'
 import ServiceHero from './components/Service/ServiceHero/ServiceHero'
 import ServicesProvided from './components/Service/ServicesProvided/ServicesProvided'
+import Contact from './components/ContactUs/Contact'
+import Skills from './components/Service/Skills/Skills'
+import LeadershipHero from './components/Leadership/LeadershipHero/LeadershipHero'
+import LeadershipRoles from './components/Leadership/Roles/Roles'
+import Stat from './components/Service/Statistics/Statistics'
 
 function App() {
   return (
@@ -32,11 +37,33 @@ function App() {
 
         {/* OTHER PAGES: Standalone views*/}
         <Route
+          path="/leadership"
+          element={
+            <main>
+             <LeadershipHero />
+             <LeadershipRoles />
+             <Stat />
+            </main>
+          }
+        />
+
+        <Route
           path="/service"
           element={
             <main>
               <ServiceHero />
               <ServicesProvided />
+              <Skills />
+            </main>
+          }
+        />
+
+        {/* OTHER PAGES: Standalone views*/}
+        <Route
+          path="/contact"
+          element={
+            <main>
+              <Contact />
             </main>
           }
         />

@@ -1,0 +1,75 @@
+.stats-container {
+  padding: 50px 10%;
+  background-color: #1777E5;
+  font-family: 'Roboto', sans-serif;
+}
+
+.stats-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.stat-item {
+  flex: 1;
+  text-align: center;
+  position: relative;
+  padding: 20px;
+}
+
+/* Icons */
+.stat-icon {
+  font-size: 32px;
+  color: #ffffff; /* Emerald Green from image_0a55d5.png */
+  margin-bottom: 20px;
+}
+
+/* Numbers */
+.stat-value {
+  font-size: 36px;
+  font-weight: 900;
+  color: #f0f0f0;
+  margin: 0 0 10px 0;
+}
+
+/* Text */
+.stat-label {
+  font-size: 14px;
+  color: #cdcdcd;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* Vertical Dividers */
+.stat-divider {
+  position: absolute;
+  right: 0;
+  top: 15%;
+  height: 70%;
+  width: 1px;
+  background-color: #e9ecef;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .stats-grid {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .stat-divider {
+    display: none;
+  }
+
+  .stat-item {
+    border-bottom: 1px solid #e9ecef;
+    padding-bottom: 40px;
+    width: 100%;
+  }
+
+  .stat-item:last-child {
+    border-bottom: none;
+  }
+}

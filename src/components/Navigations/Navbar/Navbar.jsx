@@ -30,9 +30,8 @@ export default function Navbar() {
           <div className="nav-links">
             <NavLink to="/" className="nav-item" onClick={closeMenu}>Home</NavLink>
             <NavLink to="/about" className="nav-item" onClick={closeMenu}>About</NavLink>
-            <NavLink to="/work" className="nav-item" onClick={closeMenu}>Leadership</NavLink>
+            <NavLink to="/leadership" className="nav-item" onClick={closeMenu}>Leadership</NavLink>
             <NavLink to="/service" className="nav-item" onClick={closeMenu}>Service</NavLink>
-            <NavLink to="/blog" className="nav-item" onClick={closeMenu}>Blog</NavLink>
             <NavLink to="/contact" className="nav-item" onClick={closeMenu}>Contact</NavLink>
           </div>
 

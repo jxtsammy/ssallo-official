@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+.contact-container {
+  font-family: 'Roboto', sans-serif;
+  background-color: #1777E5;
+  padding: 100px 10%;
+  color: #ffffff;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+  overflow: hidden;
+  border-bottom-left-radius: 80px;
+}
+
+.contact-container.reveal {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.contact-header {
+  margin-bottom: 80px;
+}
+
+.get-started {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.7);
+  display: block;
+  margin-bottom: 20px;
+}
+
+.contact-title {
+  font-size: 56px;
+  font-weight: 900;
+  color: #ffffff;
+  line-height: 1.1;
+  letter-spacing: -1.5px;
+}
+
+.contact-form {
+  margin-top: 40px;
+}
+
+.input-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  margin-bottom: 60px;
+}
+
+.input-group {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 10px;
+}
+
+.input-group label {
+  font-size: 14px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 15px;
+}
+
+.input-group input,
+.input-group textarea {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: transparent;
+  color: #ffffff;
+  padding: 5px 0;
+  font-family: inherit;
+}
+
+.input-group input::placeholder,
+.input-group textarea::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.focus-line {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-group:focus-within .focus-line {
+  transform: scaleX(1);
+}
+
+.input-group:focus-within label {
+  color: #ffffff;
+}
+
+.input-group.full-width {
+  margin-bottom: 60px;
+}
+
+.submit-btn {
+  background-color: #ffffff;
+  color: #1777E5;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 900;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.submit-btn:hover {
+  transform: scale(1.05);
+  background-color: #f8f9fa;
+}
+
+@media (max-width: 1024px) {
+  .contact-title { font-size: 42px; }
+  .input-row { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 768px) {
+  .contact-container { padding: 60px 24px;border-radius: 0px;}
+  .contact-title { font-size: 32px; }
+  .input-row { grid-template-columns: 1fr; gap: 40px; }
+  .submit-btn { width: 80%; justify-content: center; align-items: center; }
+}
