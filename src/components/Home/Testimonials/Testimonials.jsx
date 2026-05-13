@@ -1,19 +1,42 @@
 import { useState, useEffect, useRef } from 'react';
 import './Testimonials.css';
+import Julien from '../../../assets/testimonials/Julien.jpg'
+import McGovern from '../../../assets/testimonials/McGovern.jpeg'
+import Christy from '../../../assets/testimonials/Christy.jpg'
+import Justina from '../../../assets/testimonials/Justina.jpeg'
+import Gifty from '../../../assets/testimonials/Gifty.jpeg'
 
 const testimonialData = [
   {
-    quote: "Great Designer, does great work and is very flexible with change. if you’re a programmer and are looking for UI/UX designer is definitely well qualified for the job.",
-    name: "James Quincey",
-    role: "CEO of Coca ColA",
-    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=800&auto=format&fit=crop"
+    quote: "Sam is a great guy, both technically and in character. I got to know him through Enactus, and later had the opportunity to serve as his deputy head in the tech division. He has a rare mix of technical brilliance, strong leadership, and relentless focus. I still find myself wondering how he manages to handle everything he’s involved in and still perform at a high level—whether it’s coding, design, project management, or the other responsibilities he takes on.",
+    name: "Julien Glory Manana",
+    role: "Deputy Technology Lead, Enactus KNUST (2025 - 2026)",
+    image: Julien
   },
   {
     quote: "The attention to detail in the UI layout was exceptional. Communication was smooth throughout the entire development cycle.",
-    name: "Eleanor Scott",
-    role: "Product Manager at TechFlow",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800&auto=format&fit=crop"
-  }
+    name: "McGovern Twumasi Owusu-Bekoe.",
+    role: "Publicity Lead, Enactus KNUST (2025 - 2026)",
+    image: McGovern
+  },
+  {
+    quote: "Great work on my  flyers—very creative, professional, and eye-catching. They really helped boost my business. Highly recommended!",
+    name: "Justina Glover",
+    role: "Client, CEO of Nails by Aura",
+    image: Justina
+  },
+  {
+    quote: "The attention to detail in the UI layout was exceptional. Communication was smooth throughout the entire development cycle.",
+    name: "Christabel Benewaah",
+    role: "Team Member, Enactus KNUST",
+    image: Christy
+  },
+  {
+    quote: "The attention to detail in the UI layout was exceptional. Communication was smooth throughout the entire development cycle.",
+    name: "Gifty Appiah",
+    role: "CEO, NextMakers Foundation",
+    image: Gifty
+  },
 ];
 
 const Testimonials = () => {
@@ -62,7 +85,7 @@ const Testimonials = () => {
           <div className={`testimonial-card ${isAnimating ? 'fade-blur' : ''}`}>
             <p className="quote-text">“{quote}”</p>
             <div className="author-meta">
-              <span className="author-name">{name}</span>
+              <span className="t-author-name">{name}</span>
               <span className="author-role">{role}</span>
             </div>
           </div>

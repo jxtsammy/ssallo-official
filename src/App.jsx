@@ -14,6 +14,7 @@ import Skills from './components/Service/Skills/Skills'
 import LeadershipHero from './components/Leadership/LeadershipHero/LeadershipHero'
 import LeadershipRoles from './components/Leadership/Roles/Roles'
 import Stat from './components/Service/Statistics/Statistics'
+import AboutHero from './components/About/AboutHero/AboutHero'
 
 function App() {
   return (
@@ -36,6 +37,17 @@ function App() {
         />
 
         {/* OTHER PAGES: Standalone views*/}
+
+        <Route
+          path="/about"
+          element={
+            <main>
+             <AboutHero />
+             <History />
+            </main>
+          }
+        />
+
         <Route
           path="/leadership"
           element={

@@ -14,7 +14,7 @@ const LeadershipHero = () => {
       <div className="hero-content">
         <h1 className="hero-title">
           <span>Driving innovation through</span> <br />
-          <span className="accent-text">visionary leadership.</span>
+          <span className="l-accent-text">visionary leadership.</span>
         </h1>
       </div>
       <div className="hero-bg-accent"></div>

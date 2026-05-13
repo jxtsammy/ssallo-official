@@ -1,142 +1,188 @@
-.hero {
-  width: 100%;
+.main-hero {
+  background-color: #fcfcfc;
   height: 100vh;
-  background-color: #ffffff;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
   display: flex;
-  justify-content: center;
-  overflow: hidden; /* Keeps the blur from causing scrollbars */
+  align-items: flex-end;
   font-family: 'Roboto', sans-serif;
 }
 
 .hero-container {
   width: 100%;
-  max-width: 1100px;
-  display: flex;
-  align-items: flex-end; /* This makes the image touch the bottom */
-  justify-content: space-between;
-  padding: 0;
-}
-
-/* --- Image & Blur Logic --- */
-.hero-image-wrapper {
+  max-width: 1600px;
+  margin: 0 auto;
   position: relative;
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
   height: 100%;
 }
 
-.hero-img {
-  width: 100%;
-  max-width: 450px;
-  z-index: 2;
-  display: block;
-}
-
-.blur-circle {
+/* Background Name Typography */
+.hero-name-wrapper {
   position: absolute;
-  width: 400px;
-  height: 400px;
-  background: #1777E5; /* Adjust color to match your blue theme */
-  border-radius: 50%;
-  filter: blur(80px);
-  opacity: 0.4;
-  bottom: 10%;
+  top: 15%;
+  left: 5%;
   z-index: 1;
 }
 
-/* --- Content Styling --- */
-.hero-content {
-  width: 45%;
-  padding-bottom: 100px; /* Adjust vertical position */
-}
-
-.role-tag {
-  display: flex;
-  align-items: flex-start;
-  gap: 15px;
-  margin-bottom: 20px;
-}
-
-.role-tag .line {
-  width: 40px;
-  height: 2px;
-  background-color: #1777E5;
-  margin-top: 20px;
-}
-
-.role-text p {
-  color: #1777E5;
-  font-weight: 700;
-  font-size: 14px;
-  margin: 0;
-  line-height: 1.4;
-}
-
-.hero-title {
-  font-size: 64px;
+.hero-name-bg {
+  font-size: clamp(60px, 15vw, 220px);
   font-weight: 900;
-  color: #1a1a1a;
-  line-height: 1.1;
+  color: #1777E5;
+  margin: 0;
+  letter-spacing: -5px;
+  line-height: 0.8;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1s ease-out;
+}
+
+/* Content Layout */
+.hero-content-grid {
+  display: grid;
+  grid-template-columns: 1fr 450px;
+  align-items: flex-end;
+  height: 100%;
+  position: relative;
+  z-index: 2;
+  padding: 0 5%;
+}
+
+.hero-portrait-column {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.portrait-img {
+  max-height: 85vh;
+  width: auto;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1.2s cubic-bezier(0.2, 1, 0.3, 1) 0.2s;
+}
+
+.hero-details-column {
+  padding-bottom: 8vh;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1s ease-out 0.6s;
+}
+
+/* Primary Text Styles */
+.hero-heading {
+  font-size: 32px;
+  font-weight: 800;
+  color: #1a1b26;
+  line-height: 1.2;
   margin-bottom: 25px;
 }
 
-.hero-description {
+.s-hero-description {
   color: #666;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 1.6;
   margin-bottom: 40px;
-  max-width: 450px;
 }
 
-/* --- Buttons --- */
-.hero-btns {
-  display: flex;
-  gap: 20px;
+.contact-item{
+  margin-bottom: 20px;
 }
 
-.btn-primary {
-  background-color: #1777E5;
-  color: white;
-  border: none;
-  padding: 15px 35px;
-  border-radius: 6px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: 0.3s;
+.contact-item .label {
+  display: block;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #999;
+  letter-spacing: 1px;
+  margin-bottom: 4px;
 }
 
-.btn-secondary {
-  background-color: #f3f4f6;
-  color: #1a1a1a;
-  border: none;
-  padding: 15px 35px;
-  border-radius: 6px;
-  font-weight: 500;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 10px;
+.contact-item .value {
+  font-weight: 700;
+  color: #1a1b26;
+  margin-bottom: 30px;
 }
 
-.btn-primary:hover { background-color: #1557b0; }
+/* Animations Trigger */
+.is-visible .hero-name-bg,
+.is-visible .portrait-img,
+.is-visible .hero-details-column {
+  opacity: 1;
+  transform: translateY(0);
+}
 
-/* --- Mobile View --- */
-@media (max-width: 900px) {
-  .hero-container {
-    flex-direction: column-reverse;
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(23, 119, 229, 0.7); }
+  70% { box-shadow: 0 0 0 10px rgba(23, 119, 229, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(23, 119, 229, 0); }
+}
+
+/* --- Clean Professional Mobile Layout --- */
+@media (max-width: 768px) {
+  .main-hero {
+    height: auto;
+    min-height: 100vh;
     align-items: center;
-    text-align: center;
+    padding: 50px 24px 60px 24px;
+    background: #1777E5;
   }
 
-  .hero-content {
-    width: 100%;
-    padding-bottom: 40px;
-    padding-top: 40px;
+  .hero-name-wrapper {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-bottom: 50px;
   }
 
-  .role-tag { justify-content: center; }
-  .hero-btns { justify-content: center; }
-  .hero-title { font-size: 40px; }
+  .hero-name-bg {
+    font-size: 120px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-align: left;
+    opacity: 1;
+  }
+
+  .hero-content-grid {
+    grid-template-columns: 1fr;
+    padding: 0;
+    display: block;
+  }
+
+  /* Portrait removed on mobile */
+  .hero-portrait-column {
+    display: none;
+  }
+
+  .hero-details-column {
+    text-align: left;
+    padding-bottom: 0;
+    color: #ffffff;
+  }
+
+  .hero-heading {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .s-hero-description {
+    font-size: 15px;
+    color: #f6f6f6;
+    margin-bottom: 20px;
+  }
+
+  .contact-item .label {
+    color: #ffffff;
+  }
+
+  .contact-item .value {
+    font-weight: 700;
+    color: #1a1b26;
+    margin-bottom: 30px;
+  }
+
+  .contact-item{
+    margin-bottom: 20px;
+  }
 }

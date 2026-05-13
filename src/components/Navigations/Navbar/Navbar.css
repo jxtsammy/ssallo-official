@@ -161,7 +161,7 @@
     height: 100vh;
     background-color: #ffffff;
     flex-direction: column;
-    justify-content: center;
+    justify-content: left;
     gap: 40px;
     transition: right 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
     z-index: 1000;
