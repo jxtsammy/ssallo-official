@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import './History.css';
 import Profile from '../../../assets/profileImg.png';
+import CV from '../../../CV/SAMUEL SALLO OFFICAL CV TEMPLATE.pdf'
 
 const HistorySection = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -54,7 +55,7 @@ const HistorySection = () => {
           </div>
         </div>
         <div className="header-actions">
-          <a href="/resume.pdf" download className="resume-link">
+          <a href={CV} download className="resume-link">
             <button className="btn-resume">
               <i className="fas fa-download"></i> Download Resume
             </button>

@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './AboutHero.css';
 import Img from '../../../assets/Aimg.jpg'
+import CV from '../../../CV/SAMUEL SALLO OFFICAL CV TEMPLATE.pdf'
 
 const AboutHero = () => {
   const [animate, setAnimate] = useState(false);
@@ -41,7 +42,7 @@ const AboutHero = () => {
               Book Me <i className="fas fa-arrow-right"></i>
             </Link>
             {/* Link this to your file in the public folder */}
-            <a href="/Julia_Sallo_Resume.pdf" download className="btn-download">
+            <a href={CV} download className="btn-download">
               <i className="fas fa-download"></i> Download Resume
             </a>
           </div>
