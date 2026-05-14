@@ -5,6 +5,7 @@ import McGovern from '../../../assets/testimonials/McGovern.jpeg'
 import Christy from '../../../assets/testimonials/Christy.jpg'
 import Justina from '../../../assets/testimonials/Justina.jpeg'
 import Gifty from '../../../assets/testimonials/Gifty.jpeg'
+import Richard from '../../../assets/testimonials/rich.jpeg'
 
 const testimonialData = [
   {
@@ -14,9 +15,9 @@ const testimonialData = [
     image: Julien
   },
   {
-    quote: "The attention to detail in the UI layout was exceptional. Communication was smooth throughout the entire development cycle.",
+    quote: "Working with Samuel has been an incredible experience. He consistently strives to brong creativity, professionalism, and strong technical skill to every project he handles. As an all round techie he pays close attention to detail and always delivers work that has both  visually engaging aesthetic while its functional, and impactful, while also being dependable in leadership and teamwork. Samuel is highly instrumental in any role he takes on, and I am confident that any organization or team would greatly benefit from him.",
     name: "McGovern Twumasi Owusu-Bekoe.",
-    role: "Publicity Lead, Enactus KNUST (2025 - 2026)",
+    role: "Publicity Lead, Enactus KNUST (2026)",
     image: McGovern
   },
   {
@@ -26,7 +27,7 @@ const testimonialData = [
     image: Justina
   },
   {
-    quote: "The attention to detail in the UI layout was exceptional. Communication was smooth throughout the entire development cycle.",
+    quote: "Samuel's graphic design and software development works are top-notch. He pays close attention to detail, listens carefully to clients' needs, and delivers exactly what is expected. One thing I truly appreciate about him is his reliability, you never have to call follow-up constantly or chase him around to get work done. He is dependable, professional and someone whose work can be genuinely trusted.",
     name: "Christabel Benewaah",
     role: "Team Member, Enactus KNUST",
     image: Christy
@@ -36,6 +37,12 @@ const testimonialData = [
     name: "Gifty Appiah",
     role: "CEO, NextMakers Foundation",
     image: Gifty
+  },
+  {
+    quote: "Working with Samuel was one of those experiences that reminds you how much great talent elevates a team. He delivered on every task. Not just visually, they felt right.",
+    name: "Richard Bobie",
+    role: "Technology Team Lead, Enactus KNUST (2025)",
+    image: Richard
   },
 ];
 

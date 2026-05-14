@@ -22,10 +22,10 @@ const AboutHero = () => {
           <div className="social-follow">
             <span>Follow me</span>
             <div className="social-icons">
-              <a href="#"><i className="fas fa-globe"></i></a>
-              <a href="#"><i className="fab fa-behance"></i></a>
-              <a href="#"><i className="fab fa-instagram"></i></a>
-              <a href="#"><i className="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/thegr8kidofficial/"><i className="fab fa-instagram"></i></a>
+              <a href="https://x.com/thegr8kid_"><i className="fab fa-twitter"></i></a>
+              <a href="https://www.linkedin.com/in/sammy-sallo/"><i className="fab fa-linkedin"></i></a>
+              <a href="https://github.com/jxtsammy"><i className="fab fa-github"></i></a>
             </div>
           </div>
         </div>

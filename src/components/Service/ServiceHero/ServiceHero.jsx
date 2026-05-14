@@ -16,12 +16,12 @@ const ServiceHero = () => {
         </p>
 
         <p className="hero-subtext">
-        As a Frontend Developer and UI/UX Designer, I specialize in creating design-centered
-          projects that prioritize Human-Computer Interaction. I don't just build interfaces;
+        As a Frontend Web & Mobile Developer, Graphic Designer and UI/UX Designer, I specialize in creating design-centered
+          projects that prioritize Human-Computer Interaction. I don't just build interfaces ans make designs;
           I engineer experiences.
         </p>
 
-        <Link to='/contact' className='link-btn'><button className="learn-more-btn">Learn more</button></Link>
+        <Link to='/contact' className='link-btn'><button className="learn-more-btn">Contact Us</button></Link>
       </div>
 
       <div className="service-hero-visual">

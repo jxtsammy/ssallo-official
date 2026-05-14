@@ -1,8 +1,18 @@
 import './Statistics.css';
 
 const StatsSection = () => {
+  // 1. Define your start year
+  const startYear = 2022;
+  // 2. Calculate the difference
+  const currentYear = new Date().getFullYear();
+  const yearsOfExperience = currentYear - startYear;
+
   const stats = [
-    { icon: "fas fa-layer-group", value: "4+", label: "Years of experience" },
+    {
+      icon: "fas fa-layer-group",
+      value: `${yearsOfExperience}+`, // 3. Use the dynamic value
+      label: "Years of experience"
+    },
     { icon: "fas fa-briefcase", value: "100+", label: "Completed Projects" },
     { icon: "far fa-smile", value: "100+", label: "Happy Clients" },
     { icon: "fas fa-coffee", value: "2000+", label: "Hours of Work" }
