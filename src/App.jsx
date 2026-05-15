@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Analytics } from '@vercel/analytics/react';
 
 // Importing your components and screens
 import Navbar from './components/Navigations/Navbar/Navbar'
@@ -86,6 +87,7 @@ function App() {
 
       {/* Footer stays here to remain visible on every page */}
       <Footer />
+      <Analytics />
     </Router>
   );
 }
