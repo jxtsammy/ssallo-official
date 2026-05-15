@@ -20,7 +20,7 @@
 /* Background Name Typography */
 .hero-name-wrapper {
   position: absolute;
-  top: 15%;
+  top: 10%;
   left: 5%;
   z-index: 1;
 }
@@ -45,7 +45,7 @@
   height: 100%;
   position: relative;
   z-index: 2;
-  padding: 0 5%;
+  padding: 0 3%;
 }
 
 .hero-portrait-column {
@@ -61,6 +61,7 @@
   opacity: 0;
   transform: translateY(50px);
   transition: all 1.2s cubic-bezier(0.2, 1, 0.3, 1) 0.2s;
+  margin-left: 250px;
 }
 
 .hero-details-column {

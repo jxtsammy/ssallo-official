@@ -98,7 +98,7 @@
 /* --- Email Button --- */
 .nav-email-btn {
   text-decoration: none;
-  color: #1a1a1a;
+  color: #fafafa;
   font-weight: 500;
   padding: 10px 20px;
   border: 1px solid #e0e0e0;
@@ -106,6 +106,7 @@
   background: linear-gradient(135deg, #fdfcfd 0%, #fff5f5 100%);
   transition: all 0.3s ease;
   font-size: 14px;
+  background: #1A73E8;
 }
 
 .nav-email-btn:hover {
@@ -155,14 +156,15 @@
 
   .nav-menu {
     position: fixed;
-    top: 0;
+    top: 30px;
     right: -100%;
     width: 100%;
     height: 100vh;
-    background-color: #ffffff;
+    background-color: #ffffff; /* Dark background as per image */
     flex-direction: column;
-    justify-content: left;
-    gap: 40px;
+    justify-content: flex-start;
+    padding: 80px 40px; /* Generous top and side padding */
+    gap: 40px; /* Spacing between the list and the button */
     transition: right 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
     z-index: 1000;
   }
@@ -173,18 +175,41 @@
 
   .nav-links {
     flex-direction: column;
-    align-items: center;
-    gap: 25px;
+    align-items: flex-start; /* Left-aligned items */
+    gap: 45px; /* Large vertical gap between links */
+    width: 100%;
   }
 
   .nav-item {
-    font-size: 22px;
+    color: #000000; /* White text */
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0;
+    transition: opacity 0.3s ease;
   }
 
+  .nav-item:hover {
+    opacity: 0.7;
+  }
+
+  /* Remove the underline from mobile to match image */
+  .nav-item.active::after {
+    display: none;
+  }
+
+  /* Pill-shaped Contact Button */
   .nav-email-btn {
-    width: 80%;
-    max-width: 320px;
+    width: 100%;
+    background-color: #1A73E8; /* White background */
+    color: #ffffff; /* Black text */
+    padding: 20px;
+    border-radius: 50px; /* Full pill shape */
     text-align: center;
-    font-size: 16px;
+    font-weight: 700;
+    font-size: 18px;
+    border: none;
+    margin-top: 20px;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
   }
 }

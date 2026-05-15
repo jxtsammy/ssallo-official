@@ -33,7 +33,7 @@ const testimonialData = [
     image: Christy
   },
   {
-    quote: "The attention to detail in the UI layout was exceptional. Communication was smooth throughout the entire development cycle.",
+    quote: "Working with Sammy has always been a smooth experience. He is reliable, committed, and incredibly fast with delivering quality work. Beyond just coding or designing, he actively contributes meaningful ideas that improve the overall project. He doesn’t just execute tasks — he thinks through the product and adds real value to the team.",
     name: "Gifty Appiah",
     role: "CEO, NextMakers Foundation",
     image: Gifty

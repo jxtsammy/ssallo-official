@@ -134,35 +134,81 @@
 
 /* --- Mobile Responsive --- */
 @media (max-width: 850px) {
+  .testimonials-container {
+    padding: 30px 30px; /* Reduced side padding for more screen real estate */
+  }
+
   .testimonials-grid {
     grid-template-columns: 1fr;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* --- Catchy Image Header --- */
+  .image-wrapper {
+    display: none;
+  }
+
+  /* --- Refined Text Side --- */
+  .testimonials-text-side {
+    order: 2;
     text-align: center;
   }
 
-  .testimonials-text-side {
-    order: 2;
-  }
-
-  .testimonials-image-side {
-    order: 1;
-    max-width: 400px;
-    margin: 0 auto;
-  }
-
   .section-title {
-    font-size: 32px;
-    margin: 20px 0;
+    font-size: 35px;
+    margin-bottom: 25px;
+    letter-spacing: -0.5px;
+    text-align: left;
   }
 
+  /* --- The "Catchy" Card --- */
   .testimonial-card {
-    padding: 30px 20px;
+    padding: 60px 25px 40px 25px; /* Extra top padding for the overlapping image */
+    background: linear-gradient(145deg, #1A73E8, #1557b0);
+    border-radius: 30px; /* Extra rounded for a friendly feel */
+    box-shadow: 0 20px 40px rgba(26, 115, 232, 0.2);
+    position: relative;
+    min-height: auto;
   }
 
+  .quote-text {
+    font-size: 17px;
+    font-style: italic;
+    opacity: 0.95;
+    line-height: 1.5;
+  }
+
+  .t-author-name {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  .author-role {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 11px;
+    opacity: 0.8;
+  }
+
+  /* --- Bottom Navigation --- */
   .navigation-controls {
     justify-content: center;
+    margin-top: 30px;
+    background: #f8fafd;
+    padding: 15px 25px;
+    border-radius: 50px;
+    display: inline-flex; /* Centers the control bar itself */
+    align-self: center;
   }
 
-  .image-wrapper {
-    border-radius: 50%; /* Optional: circular image on mobile looks clean */
+  .nav-arrow {
+    width: 50px; /* Slightly larger for easier tapping */
+    height: 50px;
+  }
+
+  .dot.active {
+    width: 30px; /* More pronounced active state */
   }
 }

@@ -15,6 +15,7 @@ import LeadershipHero from './components/Leadership/LeadershipHero/LeadershipHer
 import LeadershipRoles from './components/Leadership/Roles/Roles'
 import Stat from './components/Service/Statistics/Statistics'
 import AboutHero from './components/About/AboutHero/AboutHero'
+import Certification from './components/About/Certifications/Certification'
 
 function App() {
   return (
@@ -44,6 +45,7 @@ function App() {
             <main>
              <AboutHero />
              <History />
+             <Certification />
             </main>
           }
         />

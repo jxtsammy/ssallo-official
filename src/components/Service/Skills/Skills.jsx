@@ -27,7 +27,7 @@ const SkillsSection = () => {
 
   const secondarySkills = [
     "React Native", "React.js", "Firebase", "Supabase", "Sanity CMS",
-    "Github", "Figma", "Canva", "VS Code", "AI Tools", "Snack", "Expo", "Snack", "Notion", "Others"
+    "Github", "Figma", "Canva", "VS Code", "AI Tools", "Snack", "Expo", "Notion", "Others"
   ];
 
   return (
