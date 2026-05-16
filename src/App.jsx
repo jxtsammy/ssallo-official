@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
+
 // Importing your components and screens
 import Navbar from './components/Navigations/Navbar/Navbar'
 import Hero from './components/Home/HeroSection/Hero'
@@ -16,6 +17,7 @@ import LeadershipRoles from './components/Leadership/Roles/Roles'
 import Stat from './components/Service/Statistics/Statistics'
 import AboutHero from './components/About/AboutHero/AboutHero'
 import Certification from './components/About/Certifications/Certification'
+import Bio from './components/About/Bio/Bio'
 
 function App() {
   return (
@@ -30,8 +32,8 @@ function App() {
           element={
             <main>
                 <Hero />
+                <Bio />
                 <Testimonials />
-                <History />
                 <Quote />
             </main>
           }

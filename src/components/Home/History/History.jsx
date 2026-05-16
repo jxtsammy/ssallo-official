@@ -1,7 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
 import './History.css';
-import Profile from '../../../assets/profileImg.png';
-import CV from '../../../CV/SAMUEL SALLO OFFICAL CV TEMPLATE.pdf'
 
 const HistorySection = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -9,7 +7,7 @@ const HistorySection = () => {
 
   const education = [
     {
-      date: "2022 - Present • Kwame Nkrumah University of Science & Technology",
+      date: "2023 - Present • Kwame Nkrumah University of Science & Technology",
       title: "Bachelor of Science (B.Sc.) in Computer Science",
       desc: "Studied Computer Science at KNUST, where I developed a strong passion for technology, innovation, and building impactful digital solutions through problem-solving and practical development experience."
     },
@@ -44,25 +42,6 @@ const HistorySection = () => {
 
   return (
     <section ref={sectionRef} className={`history-container ${isVisible ? 'is-active' : ''}`}>
-      <div className="profile-header-card">
-        <div className="header-info">
-          <div className="avatar-circle">
-            <img src={Profile} alt="Julia" />
-          </div>
-          <div className="header-text">
-            <h2>Visual Designer & Webflow Developer.</h2>
-            <p>I specialize in UI/UX & Graphic Design and my passion is all about building elegant and professional user interfaces and websites.</p>
-          </div>
-        </div>
-        <div className="header-actions">
-          <a href={CV} download className="resume-link">
-            <button className="btn-resume">
-              <i className="fas fa-download"></i> Download Resume
-            </button>
-          </a>
-        </div>
-      </div>
-
       <div className="history-grid">
         {/* Education Column */}
         <div className="history-col">
@@ -93,13 +72,12 @@ const HistorySection = () => {
           <h3 className="col-label bio-label">BIO</h3>
           <div className="bio-content">
             <p>
-              I am a passionate Visual Designer and Webflow Developer with over 5 years of experience
-              creating digital experiences that are as functional as they are beautiful.
-            </p>
-            <p>
-              My approach blends technical precision with creative storytelling. Whether I'm
-              prototyping in Figma or building complex logic in Webflow, my goal is always to
-              empower brands and delight users.
+            Driven and detail-oriented developer and designer with a strong passion for building clean,
+            user-centered digital experiences. Skilled in frontend web and mobile development, UI/UX design,
+            and graphic design, with a growing interest in creating impactful technology solutions that combine
+            functionality with modern design. Adept at collaborating within teams, managing creative projects,
+            and continuously learning emerging technologies to improve productivity, usability, and overall user
+            experience. Passionate about using technology to solve real-world problems and create meaningful digital interactions.
             </p>
           </div>
         </div>
