@@ -17,7 +17,7 @@ import LeadershipRoles from './components/Leadership/Roles/Roles'
 import Stat from './components/Service/Statistics/Statistics'
 import AboutHero from './components/About/AboutHero/AboutHero'
 import Certification from './components/About/Certifications/Certification'
-import Bio from './components/About/Bio/Bio'
+import Projects from './components/About/ProjectsCompleted/Projects'
 
 function App() {
   return (
@@ -32,9 +32,9 @@ function App() {
           element={
             <main>
                 <Hero />
-                <Bio />
                 <Testimonials />
                 <Quote />
+                <Projects />
             </main>
           }
         />
@@ -70,6 +70,7 @@ function App() {
               <ServiceHero />
               <ServicesProvided />
               <Skills />
+              <Projects />
             </main>
           }
         />

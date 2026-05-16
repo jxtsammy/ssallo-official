@@ -3,7 +3,7 @@
 .history-container {
   font-family: 'Roboto', sans-serif;
   background-color: #ffffff; /* Requested Background */
-  padding: 100px 10%;
+  padding: 40px 10%;
   color: #000000;
   opacity: 0;
   transform: translateY(30px);

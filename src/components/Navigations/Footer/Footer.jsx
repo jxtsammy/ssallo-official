@@ -16,7 +16,7 @@ const Footer = () => {
           <p>Do you fancy saying hi to me or do you want to get started with your project and you need my help? Feel free to contact me.</p>
           <Link to="/contact" className="b-nav-link">
             <button className="contact-btn pulse-hover">
-              Contact With Me <i className="fas fa-arrow-right"></i>
+              Contact Me <i className="fas fa-arrow-right"></i>
             </button>
           </Link>
         </div>
