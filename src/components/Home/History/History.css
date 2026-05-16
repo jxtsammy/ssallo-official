@@ -2,9 +2,9 @@
 
 .history-container {
   font-family: 'Roboto', sans-serif;
-  background-color: #1777E5; /* Requested Background */
-  padding: 100px 10%;
-  color: #ffffff;
+  background-color: #ffffff; /* Requested Background */
+  padding: 40px 10%;
+  color: #000000;
   opacity: 0;
   transform: translateY(30px);
   transition: all 0.8s ease-out;
@@ -15,71 +15,6 @@
 .history-container.is-active {
   opacity: 1;
   transform: translateY(0);
-}
-
-/* Header Card - Using Glassmorphism for Safari Compatibility */
-.profile-header-card {
-  background: rgba(255, 255, 255, 0.1);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 20px;
-  padding: 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 80px;
-}
-
-.header-info {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-}
-
-.avatar-circle img {
-  width: 110px;
-  height: 110px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid rgba(255, 255, 255, 0.3);
-}
-
-.header-text h2 {
-  font-size: 28px;
-  font-weight: 900;
-  margin-bottom: 10px;
-  color: #ffffff;
-}
-
-.header-text p {
-  color: #e0e0e0;
-  font-size: 16px;
-  line-height: 1.6;
-  max-width: 550px;
-}
-
-.btn-resume {
-  padding: 14px 28px;
-  border-radius: 8px;
-  font-weight: 700;
-  cursor: pointer;
-  border: none;
-  background: #ffffff;
-  color: #1777E5;
-  transition: 0.3s;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.btn-resume:hover {
-  background: #f0f0f0;
-  transform: translateY(-2px);
-}
-
-.resume-limk button{
-  text-decoration: none;
 }
 
 /* Grid System */
@@ -103,7 +38,7 @@
   content: '';
   width: 24px;
   height: 2px;
-  background: #ffffff;
+  background: #000000;
 }
 
 .history-item {
@@ -113,7 +48,7 @@
 .item-date {
   font-size: 13px;
   font-weight: 700;
-  color: #ffd700; /* Gold accent for visibility on blue */
+  color: #1777E5; /* Gold accent for visibility on blue */
   display: block;
   margin-bottom: 8px;
 }
@@ -122,12 +57,12 @@
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 10px;
-  color: #ffffff;
+  color: #1777E5;
 }
 
 .history-item p, .bio-content p {
   font-size: 14px;
-  color: #d1d1d1;
+  color: #020202;
   line-height: 1.7;
 }
 

@@ -43,7 +43,7 @@ const AboutHero = () => {
             </Link>
             {/* Link this to your file in the public folder */}
             <a href={CV} download className="btn-download">
-              <i className="fas fa-download"></i> Download Resume
+              <i className="fas fa-download"></i> Download CV
             </a>
           </div>
         </div>

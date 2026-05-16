@@ -110,9 +110,7 @@
 }
 
 .nav-email-btn:hover {
-  border-color: #1a1a1a;
-  background: #ffffff;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transform: scale(1.03);
 }
 
 /* --- Hamburger Icon --- */

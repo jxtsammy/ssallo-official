@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Analytics } from '@vercel/analytics/react';
 
+
 // Importing your components and screens
 import Navbar from './components/Navigations/Navbar/Navbar'
 import Hero from './components/Home/HeroSection/Hero'
@@ -17,6 +18,7 @@ import LeadershipRoles from './components/Leadership/Roles/Roles'
 import Stat from './components/Service/Statistics/Statistics'
 import AboutHero from './components/About/AboutHero/AboutHero'
 import Certification from './components/About/Certifications/Certification'
+import Projects from './components/About/ProjectsCompleted/Projects'
 
 function App() {
   return (
@@ -32,8 +34,8 @@ function App() {
             <main>
                 <Hero />
                 <Testimonials />
-                <History />
                 <Quote />
+                <Projects />
             </main>
           }
         />
@@ -69,6 +71,7 @@ function App() {
               <ServiceHero />
               <ServicesProvided />
               <Skills />
+              <Projects />
             </main>
           }
         />

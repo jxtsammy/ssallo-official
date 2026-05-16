@@ -5,8 +5,7 @@
   background-color: #1777E5; /* Your brand blue */
   padding: 100px 80px;
   color: #ffffff;
-  border-top-right-radius: 60px;
-  border-bottom-left-radius: 60px;
+  clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
 }
 
 .services-container {
