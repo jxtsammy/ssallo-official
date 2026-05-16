@@ -6,6 +6,7 @@ import Christy from '../../../assets/testimonials/Christy.jpg'
 import Justina from '../../../assets/testimonials/Justina.jpeg'
 import Gifty from '../../../assets/testimonials/Gifty.jpeg'
 import Richard from '../../../assets/testimonials/rich.jpeg'
+import Success from '../../../assets/testimonials/Success.JPG'
 
 const testimonialData = [
   {
@@ -43,6 +44,12 @@ const testimonialData = [
     name: "Richard Bobie",
     role: "Technology Team Lead, Enactus KNUST (2025)",
     image: Richard
+  },
+  {
+    quote: "I had the privilege of working with Mr. Samuel Salo at Enactus KNUST, where he served in the IT Division during preparations for the Enactus World Cup in Thailand. He consistently demonstrated strong technical expertise, professionalism, innovation, and dedication in supporting the team’s digital and technical operations. Samuel is dependable, proactive, and an excellent team player with strong leadership and problem-solving skills. I confidently recommend him for any opportunity requiring technical expertise, teamwork, and leadership.",
+    name: "Success Baba Peters",
+    role: "Co-founder of AgriCycle Ltd.",
+    image: Success
   },
 ];
 
