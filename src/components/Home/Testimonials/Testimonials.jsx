@@ -46,7 +46,7 @@ const testimonialData = [
     image: Richard
   },
   {
-    quote: "I had the privilege of working with Mr. Samuel Salo at Enactus KNUST, where he served in the IT Division during preparations for the Enactus World Cup in Thailand. He consistently demonstrated strong technical expertise, professionalism, innovation, and dedication in supporting the team’s digital and technical operations. Samuel is dependable, proactive, and an excellent team player with strong leadership and problem-solving skills. I confidently recommend him for any opportunity requiring technical expertise, teamwork, and leadership.",
+    quote: "I had the privilege of working with Mr. Samuel Sallo at Enactus KNUST, where he served in the IT Division during preparations for the Enactus World Cup in Thailand. He consistently demonstrated strong technical expertise, professionalism, innovation, and dedication in supporting the team’s digital and technical operations. Samuel is dependable, proactive, and an excellent team player with strong leadership and problem-solving skills. I confidently recommend him for any opportunity requiring technical expertise, teamwork, and leadership.",
     name: "Success Baba Peters",
     role: "Co-founder of AgriCycle Ltd.",
     image: Success
@@ -94,7 +94,7 @@ const Testimonials = () => {
       <div className="testimonials-grid">
         {/* Left Side: Content */}
         <div className="testimonials-text-side">
-          <h2 className="section-title">What my clients <br /> say about my work!</h2>
+          <h2 className="section-title">Reviews from teams & <br /> clients about my work!</h2>
 
           <div className={`testimonial-card ${isAnimating ? 'fade-blur' : ''}`}>
             <p className="quote-text">“{quote}”</p>

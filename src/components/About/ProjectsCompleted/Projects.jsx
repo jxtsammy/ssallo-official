@@ -12,35 +12,40 @@ const RecentProjects = () => {
       category: "Website",
       description:
         "A modern foundation website built to showcase programs, innovation, and community impact.",
-      repoLink: "https://github.com/jxtsammy/Next-Makers-Official.git"
+      repoLink: "https://github.com/jxtsammy/Next-Makers-Official.git",
+      buttonText: "View Repository"
     },
     {
       title: "Academic Network (Acanet)",
       category: "Mobile App",
       description:
         "A mobile-based platform that enhances student-lecturer communication by enabling seamless global connectivity and academic networking.",
-      repoLink: "https://github.com/jxtsammy/Acanet-App.git"
+      repoLink: "https://github.com/jxtsammy/Acanet-App.git",
+      buttonText: "View Repository"
     },
     {
       title: "Enactus KNUST Official Website",
       category: "Website",
       description:
         "Official website for Enactus KNUST showcasing initiatives, projects, and organizational activities.",
-      repoLink: "https://github.com/jxtsammy/Enactus-KNUST-Official.git"
+      repoLink: "https://www.enactusknust.org",
+      buttonText: "Visit Website"
     },
     {
       title: "Land Secure Real Estate App",
       category: "Mobile App",
       description:
         "A secure real estate platform connecting verified land sellers with buyers through a transparent and map-integrated system.",
-      repoLink: "https://github.com/jxtsammy/Landsecure-Real-Estate-App.git"
+      repoLink: "https://github.com/jxtsammy/Landsecure-Real-Estate-App.git",
+      buttonText: "View Repository"
     },
     {
       title: "Daily Spark Motivational App",
       category: "Mobile App",
       description:
         "A mobile-based platform that gives daily motivation to start your day and encourage you at every step.",
-      repoLink: "https://github.com/jxtsammy/Daily-Spark-App.git"
+      repoLink: "https://github.com/jxtsammy/Daily-Spark-App.git",
+      buttonText: "View Repository"
     }
   ];
 
@@ -152,7 +157,7 @@ const RecentProjects = () => {
                     rel="noopener noreferrer"
                     className="learn-more-btn"
                   >
-                    View Repository
+                    {project.buttonText}
                   </a>
                 </div>
               </div>

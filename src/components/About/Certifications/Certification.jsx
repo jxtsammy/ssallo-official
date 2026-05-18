@@ -5,18 +5,18 @@ import certBackground from '../../../assets/cert.jpg';
 const Certifications = () => {
   const certs = [
     {
-      name: "Cybersecurity Fundamentals",
-      company: "IBM",
-      date: "August,2025",
-      description:
-        "Certified in Cybersecurity Fundamentals, with foundational knowledge in digital security, threat awareness, network protection, and cybersecurity best practices."
-    },
-    {
       name: "Techprenure’s Bootcamp",
       company: "Techstripped Africa",
       date: "June 2025",
       description:
         "Completed the Techpreneur’s Bootcamp, gaining practical experience in entrepreneurship, innovation, problem-solving, and technology-driven business development."
+    },
+    {
+      name: "Cybersecurity Fundamentals",
+      company: "IBM",
+      date: "August,2025",
+      description:
+        "Certified in Cybersecurity Fundamentals, with foundational knowledge in digital security, threat awareness, network protection, and cybersecurity best practices."
     },
     {
       name: "Introduction to Artificial Intelligence",
@@ -50,7 +50,7 @@ const Certifications = () => {
       setCurrentIndex((prev) =>
         prev === certs.length - 1 ? 0 : prev + 1
       );
-    }, 5000);
+    }, 7000);
 
     return () => clearInterval(interval);
   }, [certs.length]);

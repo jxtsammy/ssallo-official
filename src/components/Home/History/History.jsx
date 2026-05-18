@@ -15,6 +15,16 @@ const HistorySection = () => {
 
   const workHistory = [
     {
+      date: "2017 - Present • Amenuveve Ventures",
+      title: "Sales Agent",
+      desc: "Contributed to daily operations, enhanced customer service skills, and supported sales goals through effective communication and product knowledge."
+    },
+    {
+      date: "2024 – 2025 • BAPX",
+      title: "Brand Ambassador",
+      desc: "An active ambassador for BAPX and Team Lead for the KNUST Chapter working with a team of other ambitious ambassador to create jobs opportunities. •	Where we help student specifically, to secure jobs by making known to them vacant job applications so that those who qualify can apply and secure the job regardless of the course you studied in school."
+    },
+    {
       date: "2025 • VRA Academy",
       title: "Intern",
       desc: "Supported technology operations and provision of technical support"

@@ -157,14 +157,15 @@
     top: 30px;
     right: -100%;
     width: 100%;
-    height: 100vh;
+    height: 85vh;
     background-color: #ffffff; /* Dark background as per image */
     flex-direction: column;
     justify-content: flex-start;
     padding: 80px 40px; /* Generous top and side padding */
-    gap: 40px; /* Spacing between the list and the button */
+    gap: 20px; /* Spacing between the list and the button */
     transition: right 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
     z-index: 1000;
+    border-bottom: 30px;
   }
 
   .nav-menu.active {
@@ -174,14 +175,14 @@
   .nav-links {
     flex-direction: column;
     align-items: flex-start; /* Left-aligned items */
-    gap: 45px; /* Large vertical gap between links */
+    gap: 35px; /* Large vertical gap between links */
     width: 100%;
   }
 
   .nav-item {
     color: #000000; /* White text */
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 200;
     text-decoration: none;
     padding: 0;
     transition: opacity 0.3s ease;

@@ -24,7 +24,7 @@
 
 /* --- Left Side --- */
 .section-title {
-  font-size: 42px;
+  font-size: 48px;
   font-weight: 900;
   color: #111;
   margin-bottom: 40px;
@@ -107,7 +107,7 @@
 .image-wrapper {
   position: relative;
   width: 100%;
-  padding-top: 105%; /* 1:1 Aspect Ratio */
+  padding-top: 120%; /* 1:1 Aspect Ratio */
   border-radius: 24px;
   overflow: hidden;
 }

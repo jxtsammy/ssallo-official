@@ -232,11 +232,19 @@
 @media (max-width: 900px) {
   .footer-top {
     flex-direction: column;
-    gap: 40px;
+    gap: 20px;
   }
 
   .social-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-info-card {
+    width: 400px;
+  }
+
+  .info-item i {
+    display: none;
   }
 
   .footer-bottom {
