@@ -1,6 +1,6 @@
 import './ServiceHero.css';
 import MyImage from '../../../assets/camp.jpeg'
-import { Link } from 'react-router-dom';
+import CV from '../../../CV/SAMUEL SALLO OFFICAL CV TEMPLATE.pdf'
 
 const ServiceHero = () => {
   return (
@@ -20,7 +20,7 @@ const ServiceHero = () => {
         My work is driven by a commitment to excellence and customer satisfaction—ensuring every solution not only works as intended, but also looks and feels exceptional.
         </p>
 
-        <Link to='/contact' className='link-btn'><button className="learn-more-btn">Contact Us</button></Link>
+        <a href={CV} download className='link-btn'><button className="s-learn-more-btn">Download CV</button></a>
       </div>
 
       <div className="service-hero-visual">

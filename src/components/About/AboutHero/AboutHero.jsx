@@ -50,7 +50,7 @@ const AboutHero = () => {
       </div>
 
       <div className="hero-image-container">
-        <img src={Img} alt="Julia's Creative Workspace" className="main-hero-img" />
+        <img src={Img} alt="Sammy's Creative Workspace" className="main-hero-img" />
       </div>
     </section>
   );
