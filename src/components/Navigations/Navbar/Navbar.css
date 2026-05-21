@@ -154,18 +154,19 @@
 
   .nav-menu {
     position: fixed;
-    top: 30px;
+    top: 80px;
     right: -100%;
     width: 100%;
-    height: 85vh;
+    height: 60vh;
     background-color: #ffffff; /* Dark background as per image */
     flex-direction: column;
     justify-content: flex-start;
-    padding: 80px 40px; /* Generous top and side padding */
-    gap: 20px; /* Spacing between the list and the button */
+    padding: 50px 40px; /* Generous top and side padding */
+    gap: 10px; /* Spacing between the list and the button */
     transition: right 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
     z-index: 1000;
-    border-bottom: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
   }
 
   .nav-menu.active {
@@ -175,13 +176,13 @@
   .nav-links {
     flex-direction: column;
     align-items: flex-start; /* Left-aligned items */
-    gap: 35px; /* Large vertical gap between links */
+    gap: 20px; /* Large vertical gap between links */
     width: 100%;
   }
 
   .nav-item {
-    color: #000000; /* White text */
-    font-size: 24px;
+    color: #1A73E8; /* White text */
+    font-size: 20px;
     font-weight: 200;
     text-decoration: none;
     padding: 0;
@@ -202,10 +203,10 @@
     width: 100%;
     background-color: #1A73E8; /* White background */
     color: #ffffff; /* Black text */
-    padding: 20px;
+    padding: 10px;
     border-radius: 50px; /* Full pill shape */
     text-align: center;
-    font-weight: 700;
+    font-weight: 300;
     font-size: 18px;
     border: none;
     margin-top: 20px;

@@ -2,7 +2,7 @@ import { useState, useEffect, useCallback } from 'react';
 import './Roles.css';
 import DH from '../../../assets/camp.jpeg'
 import CG from '../../../assets/IMG_9816.JPG'
-import NM from '../../../assets/NextMakers.png'
+import NM from '../../../assets/Sam.png'
 
 const LeadershipCarousel = () => {
   const leadershipData = [

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { NavLink, useLocation } from 'react-router-dom';
+import { Link, NavLink, useLocation } from 'react-router-dom'; // 1. Added Link here
 import './Navbar.css';
 import LogoImg from '../../../assets/myLogo.png';
 
@@ -9,14 +9,11 @@ export default function Navbar() {
   const email = "ssallo1012@gmail.com";
 
   useEffect(() => {
-    // 1. Automatically scroll to top
     window.scrollTo(0, 0);
 
-    // 2. Set Tab Name
     if (pathname === "/") {
-      document.title = "Samuel Sallo"; // Your default name for the home page
+      document.title = "Samuel Sallo";
     } else {
-      // Capitalize the path for other pages (e.g., /about -> About)
       const pageName = pathname.substring(1).charAt(0).toUpperCase() + pathname.slice(2);
       document.title = `${pageName} | Samuel Sallo`;
     }
@@ -40,7 +37,15 @@ export default function Navbar() {
 
         <div className={`nav-menu ${isOpen ? 'active' : ''}`}>
           <div className="nav-links">
-            <NavLink to="/" className="nav-item" onClick={closeMenu}>Home</NavLink>
+            {/* 2. Changed to standard Link with a manual active class condition */}
+            <Link
+              to="/"
+              className={`nav-item ${pathname === '/' ? 'active' : ''}`}
+              onClick={closeMenu}
+            >
+              Home
+            </Link>
+
             <NavLink to="/about" className="nav-item" onClick={closeMenu}>About</NavLink>
             <NavLink to="/leadership" className="nav-item" onClick={closeMenu}>Leadership</NavLink>
             <NavLink to="/service" className="nav-item" onClick={closeMenu}>Service</NavLink>

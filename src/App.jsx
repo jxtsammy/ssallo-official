@@ -18,6 +18,7 @@ import Stat from './components/Service/Statistics/Statistics'
 import AboutHero from './components/About/AboutHero/AboutHero'
 import Certification from './components/About/Certifications/Certification'
 import Projects from './components/About/ProjectsCompleted/Projects'
+import ServiceExtra from './components/Service/ServiceExtra/ServiceExtra'
 
 function App() {
   return (
@@ -67,6 +68,7 @@ function App() {
           path="/service"
           element={
             <main>
+              <ServiceExtra />
               <ServiceHero />
               <ServicesProvided />
               <Skills />

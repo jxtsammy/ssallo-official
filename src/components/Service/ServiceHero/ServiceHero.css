@@ -86,7 +86,7 @@
   .service-hero-container {
     flex-direction: column;
     padding: 60px 5%;
-    text-align: center;
+    text-align: left;
   }
 
   .label-wrapper {

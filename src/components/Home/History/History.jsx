@@ -3,6 +3,7 @@ import './History.css';
 
 const HistorySection = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(false);
   const sectionRef = useRef(null);
 
   const education = [
@@ -22,7 +23,7 @@ const HistorySection = () => {
     {
       date: "2024 – 2025 • BAPX",
       title: "Brand Ambassador",
-      desc: "An active ambassador for BAPX and Team Lead for the KNUST Chapter working with a team of other ambitious ambassador to create jobs opportunities. •	Where we help student specifically, to secure jobs by making known to them vacant job applications so that those who qualify can apply and secure the job regardless of the course you studied in school."
+      desc: "An active ambassador for BAPX and Team Lead for the KNUST Chapter working with a team of other ambitious ambassador to create jobs opportunities. Where we help student specifically, to secure jobs by making known to them vacant job applications so that those who qualify can apply and secure the job regardless of the course you studied in school."
     },
     {
       date: "2025 • VRA Academy",
@@ -51,46 +52,64 @@ const HistorySection = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className={`history-container ${isVisible ? 'is-active' : ''}`}>
-      <div className="history-grid">
-        {/* Education Column */}
-        <div className="history-col">
-          <h3 className="col-label edu-label">EDUCATION</h3>
-          {education.map((item, index) => (
-            <div key={index} className="history-item">
-              <span className="item-date">{item.date}</span>
-              <h4>{item.title}</h4>
-              <p>{item.desc}</p>
-            </div>
-          ))}
-        </div>
+    <section
+      ref={sectionRef}
+      className={`history-container ${isVisible ? 'is-active' : ''} ${isExpanded ? 'expanded' : 'collapsed'}`}
+    >
+      <div className="history-wrapper-inner">
+        <div className="history-grid">
+          {/* Education Column */}
+          <div className="history-col">
+            <h3 className="col-label edu-label">EDUCATION</h3>
+            {education.map((item, index) => (
+              <div key={index} className="history-item">
+                <span className="item-date">{item.date}</span>
+                <h4>{item.title}</h4>
+                <p>{item.desc}</p>
+              </div>
+            ))}
+          </div>
 
-        {/* Work History Column */}
-        <div className="history-col">
-          <h3 className="col-label work-label">WORK HISTORY</h3>
-          {workHistory.map((item, index) => (
-            <div key={index} className="history-item">
-              <span className="item-date">{item.date}</span>
-              <h4>{item.title}</h4>
-              <p>{item.desc}</p>
-            </div>
-          ))}
-        </div>
+          {/* Work History Column */}
+          <div className="history-col">
+            <h3 className="col-label work-label">WORK HISTORY</h3>
+            {workHistory.map((item, index) => (
+              <div key={index} className="history-item">
+                <span className="item-date">{item.date}</span>
+                <h4>{item.title}</h4>
+                <p>{item.desc}</p>
+              </div>
+            ))}
+          </div>
 
-        {/* Bio Column */}
-        <div className="history-col">
-          <h3 className="col-label bio-label">BIO</h3>
-          <div className="bio-content">
-            <p>
-            Driven and detail-oriented developer and designer with a strong passion for building clean,
-            user-centered digital experiences. Skilled in frontend web and mobile development, UI/UX design,
-            and graphic design, with a growing interest in creating impactful technology solutions that combine
-            functionality with modern design. Adept at collaborating within teams, managing creative projects,
-            and continuously learning emerging technologies to improve productivity, usability, and overall user
-            experience. Passionate about using technology to solve real-world problems and create meaningful digital interactions.
-            </p>
+          {/* Bio Column */}
+          <div className="history-col">
+            <h3 className="col-label bio-label">BIO</h3>
+            <div className="bio-content">
+              <p>
+                Driven and detail-oriented developer and designer with a strong passion for building clean,
+                user-centered digital experiences. Skilled in frontend web and mobile development, UI/UX design,
+                and graphic design, with a growing interest in creating impactful technology solutions that combine
+                functionality with modern design. Adept at collaborating within teams, managing creative projects,
+                and continuously learning emerging technologies to improve productivity, usability, and overall user
+                experience. Passionate about using technology to solve real-world problems and create meaningful digital interactions.
+              </p>
+            </div>
           </div>
         </div>
+
+        {/* The Fade Out Overlay Mask */}
+        <div className="history-fade-overlay"></div>
+      </div>
+
+      {/* Expand / Collapse Action Trigger */}
+      <div className="history-action-container">
+        <button
+          className="history-toggle-btn"
+          onClick={() => setIsExpanded(!isExpanded)}
+        >
+          {isExpanded ? 'Show Less' : 'Read More'}
+        </button>
       </div>
     </section>
   );

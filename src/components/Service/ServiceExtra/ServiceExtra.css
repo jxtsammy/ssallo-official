@@ -1,0 +1,191 @@
+/* Container & Layout */
+.service-extra-hero-container {
+  position: relative;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 10%;
+  margin: 0 auto;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: #ffffff;
+  overflow: hidden;
+  gap: 60px;
+}
+
+.service-extra-hero-content {
+  max-width: 850px;
+  z-index: 2;
+}
+
+/* Typography */
+.service-extra-hero-title {
+  font-size: clamp(4.5rem, 3vw, .5rem);
+  font-weight: 700;
+  line-height: 1.15;
+  color: #1a1a1a;
+  margin-bottom: 2rem;
+  width: 100%;
+  letter-spacing: -0.01em;
+}
+
+.service-extra-highlight-pill {
+  background-color: #1777E5;
+  color: #ffffff;
+  padding: 0.05rem 1.0rem;
+  border-radius: 100px;
+  display: inline-block;
+  transform: rotate(-5deg);
+  transform-origin: center;
+  margin: 0 0.2rem; /* Adds breathing room for the tilted edges */
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.service-extra-hero-subtitle {
+  font-size: clamp(1rem, 1.25vw, 1.2rem);
+  line-height: 1.6;
+  color: #666666;
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+
+/* CTA & Social Proof Group */
+.service-extra-hero-cta-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.service-extra-btn-primary {
+  background-color: #111111;
+  color: #ffffff;
+  border: none;
+  padding: 1.1rem 2.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.service-extra-link-wrapper {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.service-extra-btn-primary:hover {
+  background-color: #222222;
+  transform: translateY(-2px);
+}
+
+/* Avatar Stack */
+.service-extra-social-proof {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.service-extra-avatar-group {
+  display: flex;
+  align-items: center;
+}
+
+.service-extra-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  object-fit: cover;
+  margin-left: -12px;
+}
+
+.service-extra-avatar:first-child {
+  margin-left: 0;
+}
+
+.service-extra-proof-text {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #444444;
+}
+
+/* Floating Circular Badge */
+.service-extra-badge-circle {
+  position: absolute;
+  bottom: 10%;
+  right: 5%;
+  width: 110px;
+  height: 110px;
+  background-color: #1777E5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.service-extra-badge-circle:hover {
+  transform: rotate(45deg) scale(1.05);
+}
+
+.service-extra-badge-arrow {
+  color: #ffffff;
+  font-size: 1.5rem;
+  position: absolute;
+  z-index: 2;
+}
+
+.service-extra-badge-text-svg {
+  width: 100%;
+  height: 100%;
+  animation: service-extra-spin 12s linear infinite;
+}
+
+.service-extra-badge-text-svg text {
+  fill: #ffffff;
+  font-size: 9.5px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+@keyframes service-extra-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Mobile & Tablet Responsiveness */
+@media (max-width: 768px) {
+  .service-extra-hero-container {
+    padding: 3rem 1.5rem;
+    min-height: auto;
+  }
+
+  .service-extra-hero-title {
+    margin-bottom: 1.5rem;
+    font-size: 42px;
+  }
+
+  .service-extra-hero-subtitle {
+    margin-bottom: 2.5rem;
+  }
+
+  .service-extra-hero-cta-group {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+
+  .service-extra-btn-primary {
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .service-extra-badge-circle {
+    display: none;
+  }
+}
