@@ -94,8 +94,8 @@ const HistorySection = () => {
                 and continuously learning emerging technologies to improve productivity, usability, and overall user
                 experience. Passionate about using technology to solve real-world problems and create meaningful digital interactions.<br /><br />
 
-                I’ve always had a strong interest in technology since childhood, but everything truly reignited when I discovered
-                web development through HTML in high school in 2022. Ater completing high school, I advanced my skills by learning
+                I’ve always had a strong interest in technology, but everything truly reignited when I discovered
+                web development through HTML in high school in 2022. After completing high school, I advanced my skills by learning
                 CSS and JavaScript, which allowed me to build more refined and functional websites and sparked my passion for good, intentional design. <br /><br />
 
                 In early 2023, I stepped up my web development journey by adding the React stack to my skill set, which guided me
