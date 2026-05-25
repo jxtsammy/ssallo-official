@@ -16,8 +16,8 @@ const AboutHero = () => {
       <div className="hero-top">
         <div className="headline-area">
           <h1>
-            Frontend Web & Mobile Developer, <br />
-            Graphic Designer and UI/UX Designer.
+          My Journey in Tech, Design <br />
+          & Leadership That Shaped Me.
           </h1>
           <div className="social-follow">
             <span>Follow me</span>
