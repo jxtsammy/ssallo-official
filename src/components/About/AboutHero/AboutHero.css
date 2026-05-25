@@ -1,5 +1,5 @@
 .about-hero {
-  padding: 80px 10%;
+  padding: 20px 10%;
   background-color: #fff;
   font-family: 'Roboto', sans-serif;
   overflow: hidden;
@@ -87,25 +87,6 @@
   display: flex;
   align-items: center;
   gap: 10px;
-}
-
-/* Image Section */
-.hero-image-container {
-  position: relative;
-  border-radius: 20px;
-  overflow: hidden;
-  opacity: 0;
-  transform: scale(0.95);
-  transition: all 1s ease-out 0.4s;
-  max-width: 1000px; /* Limits the horizontal expansion */
-  margin: 0 auto;    /* Centers the image container */
-  aspect-ratio: 16 / 9;
-}
-
-.main-hero-img {
-  width: 100%;
-  height: 100%;
-  display: block;
 }
 
 /* Trigger Animations */

@@ -16,29 +16,29 @@ const Organizations = () => {
     {
       id: 1,
       name: "Enactus KNUST",
-      title: "Empowering communities through entrepreneurial action and sustainable innovation.",
+      title: "A student organization that uses entrepreneurial action to solve societal problems to create a better world. Empowering communities through entrepreneurial action and sustainable innovation.",
       link: "https://enactus.org",
       bgImage: EnactusBg // Replace with EnactusBg
     },
     {
       id: 2,
       name: "AgriCycle",
-      title: "Cultivating tech ecosystems and driving structural tech division initiatives.",
+      title: "Agricycle transforms food and plantain waste into valuable resources, including organic fertilizers and biodegradable paper packaging. Through sustainable innovation, we reduce agricultural waste while creating eco-friendly alternatives.",
       link: "https://agricycle.org",
       bgImage: AgriCycleBg // Replace with AgriCycleBg
     },
     {
       id: 3,
       name: "Sunawash",
-      title: "Building next-gen digital infrastructure to track, coordinate, and scale technical workflows.",
-      link: "https://sunawash.com",
+      title: "Turning waste into opportunity by producing high-quality multipurpose soaps for skincare and laundry. Creating cleaner communities through sustainable innovation and climate-conscious solutions.",
+      link: "https://www.linkedin.com/company/sunawash-africa-ltd/",
       bgImage: SunawashBg // Replace with SunawashBg
     },
     {
       id: 4,
       name: "NextMakers Foundation",
-      title: "Building next-gen digital infrastructure to track, coordinate, and scale technical workflows.",
-      link: "https://sunawash.com",
+      title: "A foundation committed to raising problem solvers equipped to tackle real-world challenges. We nurture creativity, leadership, and innovation to shape the next generation of changemakers.",
+      link: "https://www.linkedin.com/company/nextmakers-foundation/",
       bgImage: NextMakers // Replace with SunawashBg
     }
   ];
@@ -107,8 +107,8 @@ const Organizations = () => {
                 key={`pc-${card.id}`}
                 className="org-card"
                 style={{
-                  backgroundImage: `linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.85) 100%), url(${card.bgImage})`,
-                  flex: `0 0 calc(${100 / cards.length}% - 18px)` // Uniformly structures square aspects
+                  backgroundImage: `linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.98) 50%. rgba(0, 0, 0, 1) 100%), url(${card.bgImage})`,
+                  flex: `0 0 calc(${100 / cards.length}% - 28px)` // Uniformly structures square aspects
                 }}
               >
                 <div className="org-card-content">
@@ -133,7 +133,7 @@ const Organizations = () => {
               <span className="org-card-tagline">{cards[activeIndex].name}</span>
               <p className="org-card-text">{cards[activeIndex].title}</p>
               <a href={cards[activeIndex].link} target="_blank" rel="noopener noreferrer" className="org-connect-btn">
-                Connect
+                Connect on LinkedIn
               </a>
             </div>
           </div>

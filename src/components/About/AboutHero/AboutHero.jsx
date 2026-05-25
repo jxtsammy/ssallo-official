@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './AboutHero.css';
-import Img from '../../../assets/Aimg.jpg'
 import CV from '../../../CV/SAMUEL SALLO OFFICAL CV TEMPLATE.pdf'
 
 const AboutHero = () => {
@@ -47,10 +46,6 @@ const AboutHero = () => {
             </a>
           </div>
         </div>
-      </div>
-
-      <div className="hero-image-container">
-        <img src={Img} alt="Sammy's Creative Workspace" className="main-hero-img" />
       </div>
     </section>
   );
