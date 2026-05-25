@@ -240,10 +240,19 @@
   }
 
   .contact-info-card {
-    width: 400px;
+    width: 300px;
+    flex-direction: column;
+    display: flex;
+    font-size: 10px;
+    text-align: left;
+    align-items: start;
   }
 
-  .info-item i {
+  .info-item{
+    margin-bottom: 10px;
+  }
+
+  .info-divider {
     display: none;
   }
 

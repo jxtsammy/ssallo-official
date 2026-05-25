@@ -107,7 +107,7 @@ const Organizations = () => {
                 key={`pc-${card.id}`}
                 className="org-card"
                 style={{
-                  backgroundImage: `linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.98) 50%. rgba(0, 0, 0, 1) 100%), url(${card.bgImage})`,
+                  backgroundImage: `linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 1) 100%), url(${card.bgImage})`,
                   flex: `0 0 calc(${100 / cards.length}% - 28px)` // Uniformly structures square aspects
                 }}
               >

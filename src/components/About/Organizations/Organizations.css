@@ -180,12 +180,16 @@
     font-size: 28px;
   }
 
+  .orgs-section {
+    padding: 0
+  }
+
   .orgs-pc-track {
     gap: 20px;
   }
 
   .org-card-content {
-    padding: 28px;
+    padding: 20px;
   }
 }
 
