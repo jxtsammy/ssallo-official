@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 .orgs-section {
-  padding: 80px 10%;
+  padding: 80px 5%;
   background-color: #ffffff;
   font-family: 'Roboto', sans-serif;
   overflow: hidden;
@@ -100,7 +100,7 @@
 
 /* Perfect Square Base Card Layout specs */
 .org-card {
-  aspect-ratio: 1 / 1;
+  height: 400px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -118,7 +118,7 @@
 .org-card-content {
   position: absolute;
   inset: 0;
-  padding: 40px;
+  padding: 18px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end; /* Pushes content components down tightly together */
