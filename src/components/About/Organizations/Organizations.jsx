@@ -115,7 +115,7 @@ const Organizations = () => {
                   <span className="org-card-tagline">{card.name}</span>
                   <p className="org-card-text">{card.title}</p>
                   <a href={card.link} target="_blank" rel="noopener noreferrer" className="org-connect-btn">
-                    Connect
+                    Connect on Linkedin
                   </a>
                 </div>
               </div>
