@@ -1,5 +1,5 @@
 import './ServiceHero.css';
-import MyImage from '../../../assets/camp.jpeg'
+import MyImage from '../../../assets/meImg.png'
 import CV from '../../../CV/SAMUEL SALLO OFFICAL CV TEMPLATE.pdf'
 
 const ServiceHero = () => {
@@ -27,7 +27,7 @@ const ServiceHero = () => {
         <div className="video-thumbnail">
           <img
             src={MyImage}
-            alt="Design collaboration"
+            alt="Sallo Samuel"
           />
         </div>
       </div>

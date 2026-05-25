@@ -42,6 +42,7 @@ export default function Navbar() {
               to="/"
               className={`nav-item ${pathname === '/' ? 'active' : ''}`}
               onClick={closeMenu}
+              end
             >
               Home
             </Link>

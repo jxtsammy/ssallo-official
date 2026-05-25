@@ -4,7 +4,7 @@
   font-family: 'Roboto', sans-serif;
 
   margin: 0 auto;
-  padding: 80px 100px;
+  padding: 80px 10%;
   opacity: 0;
   transform: translateY(40px);
   transition: all 0.8s ease-out;

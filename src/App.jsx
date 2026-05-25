@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // Importing your components and screens
 import Navbar from './components/Navigations/Navbar/Navbar'
+import Organizations from './components/About/Organizations/Organizations'
 import Hero from './components/Home/HeroSection/Hero'
 import Footer from './components/Navigations/Footer/Footer';
 import Testimonials from './components/Home/Testimonials/Testimonials';
@@ -48,6 +49,7 @@ function App() {
             <main>
              <AboutHero />
              <History />
+             <Organizations />
              <Certification />
             </main>
           }
