@@ -4,7 +4,7 @@ import './Organizations.css';
 // Leave placeholders for your actual background images
 import EnactusBg from '../../../assets/organizations/Enactus.jpg';
 import AgriCycleBg from '../../../assets/organizations/Agricycle.jpg';
-import SunawashBg from '../../../assets/organizations/Wash.jpg';
+import SunawashBg from '../../../assets/organizations/Wash.JPG';
 import NextMakers from '../../../assets/organizations/NextMakers.jpg';
 
 const Organizations = () => {
