@@ -17,14 +17,14 @@ const Organizations = () => {
       id: 1,
       name: "Enactus KNUST",
       title: "A student organization that uses entrepreneurial action to solve societal problems to create a better world. Empowering communities through entrepreneurial action and sustainable innovation.",
-      link: "https://enactus.org",
+      link: "https://www.linkedin.com/company/enactus-knust/g",
       bgImage: EnactusBg // Replace with EnactusBg
     },
     {
       id: 2,
       name: "AgriCycle",
       title: "Agricycle transforms food and plantain waste into valuable resources, including organic fertilizers and biodegradable paper packaging. Through sustainable innovation, we reduce agricultural waste while creating eco-friendly alternatives.",
-      link: "https://agricycle.org",
+      link: "https://www.linkedin.com/company/agricycle-ltd/",
       bgImage: AgriCycleBg // Replace with AgriCycleBg
     },
     {
@@ -107,7 +107,7 @@ const Organizations = () => {
                 key={`pc-${card.id}`}
                 className="org-card"
                 style={{
-                  backgroundImage: `linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 1) 100%), url(${card.bgImage})`,
+                  backgroundImage: `linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 1) 100%), url(${card.bgImage})`,
                   flex: `0 0 calc(${100 / cards.length}% - 28px)` // Uniformly structures square aspects
                 }}
               >
