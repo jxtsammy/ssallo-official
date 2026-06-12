@@ -12,8 +12,8 @@ const RecentProjects = () => {
       category: "Website",
       description:
         "A modern foundation website built to showcase programs, innovation, and community impact.",
-      repoLink: "https://github.com/jxtsammy/Next-Makers-Official.git",
-      buttonText: "View Repository"
+      repoLink: "https://nextmakersfoundation.com/",
+      buttonText: "Visit Website"
     },
     {
       title: "Academic Network (Acanet)",
@@ -30,14 +30,6 @@ const RecentProjects = () => {
         "Official website for Enactus KNUST showcasing initiatives, projects, and organizational activities.",
       repoLink: "https://www.enactusknust.org",
       buttonText: "Visit Website"
-    },
-    {
-      title: "Land Secure Real Estate App",
-      category: "Mobile App",
-      description:
-        "A secure real estate platform connecting verified land sellers with buyers through a transparent and map-integrated system.",
-      repoLink: "https://github.com/jxtsammy/Landsecure-Real-Estate-App.git",
-      buttonText: "View Repository"
     },
     {
       title: "Daily Spark Motivational App",
