@@ -13,6 +13,7 @@ const RecentProjects = () => {
       description:
         "A modern foundation website built to showcase programs, innovation, and community impact.",
       repoLink: "https://nextmakersfoundation.com/",
+      vercelLink: "https://nextmakersfoundation.vercel.app", // Fallback link added
       buttonText: "Visit Website"
     },
     {
@@ -29,6 +30,7 @@ const RecentProjects = () => {
       description:
         "Official website for Enactus KNUST showcasing initiatives, projects, and organizational activities.",
       repoLink: "https://www.enactusknust.org",
+      vercelLink: "https://enactusknust.vercel.app", // Fallback link added
       buttonText: "Visit Website"
     },
     {
@@ -143,14 +145,27 @@ const RecentProjects = () => {
                     {project.description}
                   </p>
 
-                  <a
-                    href={project.repoLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="learn-more-btn"
-                  >
-                    {project.buttonText}
-                  </a>
+                  <div className="project-links" style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
+                    <a
+                      href={project.repoLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="learn-more-btn"
+                    >
+                      {project.buttonText}
+                    </a>
+
+                    {project.vercelLink && (
+                      <a
+                        href={project.vercelLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="learn-more-btn vercel-btn"
+                      >
+                        Vercel Link
+                      </a>
+                    )}
+                  </div>
                 </div>
               </div>
             </div>
